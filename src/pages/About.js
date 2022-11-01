@@ -1,11 +1,15 @@
-import '../styles/App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-function About() {
-  return (
-    <div className="App">
-     About Page
-    </div>
-  );
+class About extends React.Component {
+  constructor() {
+    super();
+    this.state = {color: "red"};
+  }
+  render() {
+    return <h2>I am a {this.state.color} Car!</h2>;
+  }
 }
 
-export default About;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<About />);
