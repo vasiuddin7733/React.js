@@ -10,6 +10,4 @@ class About extends React.Component {
     return <h2>I am a {this.state.color} Car!</h2>;
   }
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<About />);
+ export default About;

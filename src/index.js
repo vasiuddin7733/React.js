@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './pages/App';
-import {About} from './pages/About'
+import About from './pages/About'
+import Timer from './pages/Timer'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <About />
+    <Timer />
     <App />
   </React.StrictMode>
 );
