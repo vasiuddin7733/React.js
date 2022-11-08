@@ -1,9 +1,9 @@
 {
-  "NAMESPACE": "seidual",
+  "NAMESPACE": "reactjs",
   "ENDPOINT": {
     "PROTOCOL": "http",
     "HOST": "localhost",
-    "PORT": 3000,
+    "PORT": 5000,
     "GRAPHQL": "/graphql",
     "GRAPHIQL": "/altair",
     "PAYLOAD": {
