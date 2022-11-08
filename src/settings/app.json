@@ -1,0 +1,19 @@
+{
+  "NAMESPACE": "seidual",
+  "ENDPOINT": {
+    "PROTOCOL": "http",
+    "HOST": "localhost",
+    "PORT": 3000,
+    "GRAPHQL": "/graphql",
+    "GRAPHIQL": "/altair",
+    "PAYLOAD": {
+      "JSON": {
+        "LIMIT": "50mb"
+      },
+      "URL_ENCODED": {
+        "LIMIT": "50mb",
+        "PARAMETER_LIMIT": 100000
+      }
+    }
+  }
+}
