@@ -1,0 +1,19 @@
+{
+  "NAMESPACE": "reactjs",
+  "ENDPOINT": {
+    "PROTOCOL": "http",
+    "HOST": "localhost",
+    "PORT": 5000,
+    "GRAPHQL": "/graphql",
+    "GRAPHIQL": "/altair",
+    "PAYLOAD": {
+      "JSON": {
+        "LIMIT": "50mb"
+      },
+      "URL_ENCODED": {
+        "LIMIT": "50mb",
+        "PARAMETER_LIMIT": 100000
+      }
+    }
+  }
+}

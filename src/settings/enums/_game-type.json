@@ -1,0 +1,10 @@
+{
+  "QUESTION_SINGLE_TEXT_ANSWER": "Single text answer",
+  "QUESTION_MULTI_TEXT_ANSWER": "Multi text answer",
+  "QUESTION_TRUE_FALSE_ANSWER": "True/False answer",
+  "MATCHING_TEXT": "Matching text answer",
+  "MATCHING_IMAGE": "Matching picture answer",
+  "MATCHING_TEXT_IMAGE": "Mixed matching picture and text answer",
+  "SEQUENCE": "Sequence",
+  "MATH": "Math Game"
+}
