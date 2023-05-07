@@ -1,6 +1,0 @@
-.container {
-    max-height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-}
