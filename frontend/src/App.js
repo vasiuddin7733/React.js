@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Page1, Page2, Page3 } from './containers';
 import { NoPage } from './components/page1/nopage';
 import { Individual } from './components/page2/individual';
+import { Registration } from './components/registration/registration';
 
 function App() {
   return (
 <BrowserRouter>
     <div>
         <Routes>
+        <Route path="signup" element={<Registration />} />
           <Route index element={<Page1 />} />
           <Route path="page2" element={<Page2 />} />
           <Route path="page2/:id" element={<Individual />} />
