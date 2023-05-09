@@ -1,24 +1,30 @@
-import React from 'react'
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-const  Comp13 = () => {
-  const [data, setData] = useState([])
+const Comp13 = () => {
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos").then(
-      respone => respone.json()
-    ).then(data => setData(data))
-  }, [])
-
-
+    axios
+      .get(`https://jsonplaceholder.typicode.com/todos`)
+      .then((data) => setData(data));
+  }, []);
+  console.log(data.data);
+  const id = 1;
   return (
-    <div className="App">
-      <div>
-        {data?.map((item) => <div>{item.title}</div>)}
+    <center>
+      <div className="flex justify-center">
+        <a className="" href={`/page2/${id}`}>
+          more information
+        </a>
+        {data?.data?.map((todo) => (
+          <li key={todo.id}>{todo.title}</li>
+        ))}
       </div>
-    </div>
-
+    </center>
   );
+};
 
-}
-
-export default Comp13
+export default Comp13;
