@@ -15,7 +15,7 @@ export default class Comp11 extends Component {
     console.log(date);
 
     return (
-      <div>
+      <div className="text-red-900 ">
         {arr1.map((x) => x * x).reduce((total, value) => total + value)}
         {arr1.every((ele) => ele > 2)}
       </div>
