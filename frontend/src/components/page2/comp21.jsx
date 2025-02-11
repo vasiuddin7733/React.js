@@ -11,7 +11,6 @@ const Comp21 = () => {
   };
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(data);
     fetch("https://react-app-c291a-default-rtdb.firebaseio.com/data.json", {
       method: "POST",
       body: JSON.stringify(data),
