@@ -11,7 +11,6 @@ const Comp13 = () => {
       .get(`https://jsonplaceholder.typicode.com/todos`)
       .then((data) => setData(data));
   }, []);
-  console.log(data.data);
   const id = 1;
   return (
     <center>

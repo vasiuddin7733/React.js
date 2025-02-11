@@ -1,0 +1,16 @@
+.App{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.product-container {
+    width: 100px;
+}
+
+.product-card{
+    width: 100px;
+}
+
+.pagination{
+    padding: 5px;
+}

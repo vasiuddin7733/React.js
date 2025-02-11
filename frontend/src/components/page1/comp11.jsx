@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Functions123 from "../array/functions"
 
 export default class Comp11 extends Component {
   render() {
@@ -9,13 +10,11 @@ export default class Comp11 extends Component {
       id: 1,
     };
     const json = JSON.stringify(data);
-    console.log(json);
-    console.log(arr1.lastIndexOf(4));
     let date = new Date();
-    console.log(date);
 
     return (
       <div className="text-red-900 ">
+        <Functions123  />
         {arr1.map((x) => x * x).reduce((total, value) => total + value)}
         {arr1.every((ele) => ele > 2)}
       </div>

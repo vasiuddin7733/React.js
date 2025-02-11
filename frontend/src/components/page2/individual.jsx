@@ -12,9 +12,6 @@ export const Individual = (match) => {
   const [data, setData] = useState([]);
   let param = useParams();
   let { search } = useLocation();
-  console.log(param);
-  console.log(data);
-  console.log(search);
 
   return (
     <div className="flex justify-center">
