@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Closure = () => {
+const Closure1 = () => {
   const [name, setName] = React.useState("Vasiuddin Mohammed");
   const [count, setCount] = React.useState(1);
   const getName = () => {
@@ -23,4 +23,4 @@ const Closure = () => {
   );
 };
 
-export default Closure;
+export default Closure1;
