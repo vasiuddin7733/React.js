@@ -1,7 +1,7 @@
 import React from 'react'
-import {Comp21} from "../components"
+import { Comp21 } from "../components"
 
-const  Page2 = () => {
+const Page2 = () => {
   return (
     <div>
       <Comp21 />
