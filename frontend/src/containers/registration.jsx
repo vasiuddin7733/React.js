@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import Closure1 from "../components/closure/Closure1";
+import MyPromiseComponent from "../components/closure/MyPromiseComponent";
 
-export const Registration = () => {
+const Registration = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -30,21 +32,26 @@ export const Registration = () => {
   }
 
   return (
-    <table className="table-auto border border-gray-400">
-      <thead>
-        <tr>
-          <th className="border px-4 py-2">ID</th>
-          <th className="border px-4 py-2">Title</th>
-        </tr>
-      </thead>
-      <tbody>
-        {products.map((product) => (
-          <tr key={product.id}>
-            <td className="border px-4 py-2">{product.id}</td>
-            <td className="border px-4 py-2">{product.title}</td>
+    <>
+      <table className="table-auto border border-gray-400">
+        <thead>
+          <tr>
+            <th className="border px-4 py-2">ID</th>
+            <th className="border px-4 py-2">Title</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {products.map((product) => (
+            <tr key={product.id}>
+              <td className="border px-4 py-2">{product.id}</td>
+              <td className="border px-4 py-2">{product.title}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <Closure1 />
+      <MyPromiseComponent />
+    </>
   );
 };
+export default Registration;
