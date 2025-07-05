@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Closure1 from "../components/closure/Closure1";
 import MyPromiseComponent from "../components/closure/MyPromiseComponent";
 import Closure2 from "../components/closure/Closure2";
+import Closure3 from "../components/closure/Closure3";
 
 const Registration = () => {
   const [products, setProducts] = useState([]);
@@ -52,6 +53,7 @@ const Registration = () => {
       </table>
       <Closure1 />
       <Closure2 />
+      <Closure3 />
       <MyPromiseComponent />
     </>
   );
