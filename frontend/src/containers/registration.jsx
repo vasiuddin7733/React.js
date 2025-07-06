@@ -3,6 +3,8 @@ import Closure1 from "../components/closure/Closure1";
 import MyPromiseComponent from "../components/closure/MyPromiseComponent";
 import Closure2 from "../components/closure/Closure2";
 import Closure3 from "../components/closure/Closure3";
+import Currying1 from "../components/currying/Currying1";
+import Compose from "../components/compositions/Compose";
 
 const Registration = () => {
   const [products, setProducts] = useState([]);
@@ -54,6 +56,8 @@ const Registration = () => {
       <Closure1 />
       <Closure2 />
       <Closure3 />
+      <Currying1 />
+      <Compose />
       <MyPromiseComponent />
     </>
   );
