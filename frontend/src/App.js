@@ -1,6 +1,13 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Page1, Page2, Products, Product, Registration } from "./containers";
+import {
+  Page1,
+  Page2,
+  Products,
+  Product,
+  Registration,
+  Items,
+} from "./containers";
 import { NoPage } from "./components/page1/nopage";
 import { Individual } from "./components/page2/individual";
 
@@ -9,6 +16,7 @@ function App() {
     <BrowserRouter>
       <div>
         <Routes>
+          <Route path="/items" element={<Items />} />
           <Route path="signup" element={<Registration />} />
           <Route index element={<Page1 />} />
           <Route path="page2" element={<Page2 />} />
