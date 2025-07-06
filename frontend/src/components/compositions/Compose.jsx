@@ -18,7 +18,7 @@ const Compose = () => {
     return a * a;
   }
 
-  function compose(fn1, fn2) {
+  function composeOne(fn1, fn2) {
     return function (a, b) {
       console.log(fn2(fn1(a, b)));
       return fn2(fn1(a, b));
@@ -62,6 +62,12 @@ const Compose = () => {
   compose11(70, 3);
   compose12(70, 3);
 
+  const compose13 = composeOne(add, square);
+  const compose14 = composseTwo(multiply, square);
+  const compose15 = composseTwo(subtract, square);
+  compose13(30, 10);
+  compose14(30, 10);
+  compose15(30, 10);
   return <div>Compose</div>;
 };
 
