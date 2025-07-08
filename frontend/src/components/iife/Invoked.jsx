@@ -16,16 +16,12 @@ const Invoked = () => {
     return data;
   })();
 
-  products.then((data) => {
-    console.log("Products:", data.products);
-  });
-
   const product = (() =>
     fetch("https://dummyjson.com/products").then((data) =>
       data
         .json()
         .then((data1) => data1.products)
-        .then((data1) => console.log({ data1 }))
+        .then((data1) => data1)
     ))();
 
   return <div>Invoked</div>;
